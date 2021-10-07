@@ -1,0 +1,41 @@
+$card-color: #bebebebe;
+$card-texto-color: #082032;
+$padding-size: 10px;
+
+/*En esta sección, se crean 4 bloques con el Método de BEM*/
+
+.cards{
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    @include border;
+}
+
+.cards__servicio{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 2fr, 1fr, 0.5fr;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+    background-color: $card-color;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    margin: 10px;
+}
+.card__texto{
+    color: $card-texto-color;
+    padding: $padding-size;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.card__texto--chico{
+    color: $card-texto-color;
+    padding: $padding-size;
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 20px;
+}

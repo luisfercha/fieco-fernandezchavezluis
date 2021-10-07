@@ -1,0 +1,270 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+header {
+  background-color: #082032;
+  margin: 0px; }
+
+header nav .flexMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 40px;
+  font-size: 1.2rem;
+  margin: 0px; }
+
+.flexMenu li a {
+  text-decoration: none;
+  color: #FFF; }
+
+footer {
+  background-color: #082032;
+  margin: 0px;
+  padding: 10px; }
+
+p {
+  color: #FFF;
+  text-align: center; }
+
+.empresas {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 100px;
+  margin-right: 100px;
+  justify-content: center; }
+
+.logoEmpresas {
+  width: 200px;
+  margin: 10px; }
+
+.contacto {
+  display: flex;
+  background-color: #082032;
+  width: 100%;
+  font-size: 20px; }
+
+.mapa {
+  margin: 30px; }
+
+.form {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  font-size: 16px; }
+
+.formCampos {
+  width: 310px;
+  height: 25px;
+  margin-bottom: 10px;
+  font-size: 16px; }
+
+.formMensaje {
+  width: 630px;
+  height: 200px;
+  margin-right: 30px;
+  font-size: 16px; }
+
+.formSelectCheckbox {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 30px; }
+
+.formBotones {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30px; }
+
+.formBotonEnviar {
+  margin-top: 15px;
+  width: 318px;
+  height: 30px; }
+
+.formBotonLimpiar {
+  margin-top: 15px;
+  width: 318px;
+  height: 30px; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #E5E5E5;
+  font-family: 'Open Sans', sans-serif; }
+
+.container {
+  width: 100%;
+  max-width: 100vw; }
+
+.banner {
+  width: 100%;
+  height: auto; }
+
+.titulo {
+  color: #082032;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px; }
+
+.texto {
+  color: #2C394B;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.boton {
+  font-size: 20px;
+  text-decoration: none;
+  color: #FFF;
+  background-color: #FF4C29;
+  border-color: none;
+  border-radius: 10px;
+  padding: 12px;
+  transition: all 1s; }
+
+.textoLink {
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  transition: all 1s; }
+
+/*En esta sección, se crean 4 bloques con el Método de BEM*/
+.cards {
+  display: inline-flex;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px; }
+
+.cards__integrante {
+  display: grid;
+  grid-template-columns: 200px;
+  grid-template-rows: 2fr, 1fr, 0.5fr;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #FF4C29;
+  justify-content: center;
+  align-content: center;
+  justify-items: center; }
+
+.card__imagen {
+  border-radius: 50%;
+  width: 150px;
+  padding: 10px; }
+
+.card__texto {
+  color: #FFF;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 30px; }
+
+.card__texto--chico {
+  color: #FFF;
+  padding: 10px;
+  font-size: 20px; }
+
+/*En esta sección, se crean 4 bloques con el Método de BEM*/
+.cards {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px; }
+
+.cards__servicio {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 2fr, 1fr, 0.5fr;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #bebebebe;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  margin: 10px; }
+
+.card__texto {
+  color: #082032;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 10px; }
+
+.card__texto--chico {
+  color: #082032;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 200;
+  margin-bottom: 20px; }
+
+.empresas {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 100px;
+  margin-right: 100px;
+  justify-content: center;
+  margin-bottom: 50px; }
+
+.logoEmpresas {
+  width: 200px;
+  margin: 10px; }
+
+.contactoLista {
+  padding-left: 200px;
+  padding-right: 200px;
+  margin-bottom: 50px; }
+
+.contactoCampos {
+  width: 450px;
+  height: 50px;
+  margin-bottom: 10px;
+  font-size: 16px; }
+
+.contactoMensaje {
+  width: 910px;
+  height: 400px;
+  margin-right: 30px;
+  font-size: 16px; }
+
+.contactoSelectChekbox {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30px; }
+
+.contactoBotones {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30px; }
+
+.contactoBotonEnviar {
+  margin-top: 15px;
+  width: 420px;
+  height: 50px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #FF4C29;
+  border-color: none;
+  border-radius: 10px;
+  padding: 12px; }
+
+.contactoBotonLimpiar {
+  margin-top: 15px;
+  width: 420px;
+  height: 50px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #FF4C29;
+  border-color: none;
+  border-radius: 10px;
+  padding: 12px; }

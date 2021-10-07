@@ -1,0 +1,25 @@
+$color-fondo: #082032;
+$color-link: #FFF;
+$padding-size: 40px;
+$margin: 0px;
+
+header{
+    background-color: $color-fondo;
+	margin: $margin;
+}
+
+header nav .flexMenu {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	list-style:none;
+	justify-content: space-evenly;
+	padding: $padding-size;
+	font-size: 1.2rem;
+	margin: $margin;
+}
+
+.flexMenu li a {
+  text-decoration: none;
+  color: $color-link;
+}

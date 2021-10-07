@@ -1,0 +1,52 @@
+.contactoLista{
+	padding-left: 200px;
+	padding-right: 200px;
+	margin-bottom: 50px;
+}
+.contactoCampos{
+	width: 450px;
+	height: 50px;
+	margin-bottom: 10px;
+	font-size: 16px;
+}   
+.contactoMensaje{
+	width: 910px;
+	height: 400px;
+	margin-right: 30px;
+	font-size: 16px;
+}
+.contactoSelectChekbox{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	margin-right: 30px;
+}
+.contactoBotones{
+	display: flex;
+	justify-content: space-between;
+	margin-right: 30px;
+}
+.contactoBotonEnviar{
+	margin-top: 15px;
+	width: 420px;
+	height: 50px;
+	font-size: 20px;
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #FF4C29;
+	border-color: none;
+	border-radius: 10px;
+	padding: 12px;
+}
+.contactoBotonLimpiar{
+	margin-top: 15px;
+	width: 420px;
+	height: 50px;
+	font-size: 20px;
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #FF4C29;
+	border-color: none;
+	border-radius: 10px;
+	padding: 12px;
+}

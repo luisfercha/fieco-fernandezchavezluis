@@ -1,0 +1,57 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+
+body{
+	background-color:  #E5E5E5;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: $ancho-banner;
+    @include max-width;
+}
+
+.banner {
+    width: $ancho-banner;
+    height: auto;
+}
+
+.titulo{
+	color: #082032;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: $titulo-tamano;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 10px;
+}
+.texto{
+	color: #2C394B;
+	font-family: 'Open Sans', sans-serif;
+	font-size: $texto-tamano;
+	text-align: center;
+	margin-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.boton{
+	font-size: 20px;
+	text-decoration: none;
+	color: $boton-texto;
+	@include boton-color;
+	border-color: none;
+	border-radius: 10px;
+	padding: 12px;
+	transition: all 1s;
+}
+.textoLink{
+	text-align: center;
+	margin-bottom:  100px;
+	margin-top: 50px;
+	transition: all 1s;
+}
