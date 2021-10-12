@@ -19,6 +19,30 @@ body {
   text-align: center;
   padding: 10px; }
 
+.titulo2{
+	color: #082032;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 23px;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+.titulo3{
+	position: absolute;
+	color: #FFFFFF;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 75px;
+	text-transform: uppercase;
+	top: 50%;
+	left: 38%;
+	text-align: center;
+	z-index: 3;
+	animation: fadeIn;
+	animation-duration: 2s;
+}
+
 .texto {
   color: #2C394B;
   font-family: 'Open Sans', sans-serif;
@@ -47,6 +71,7 @@ body {
 .linea{
 	border-top: 1px solid grey;
 	margin-bottom: 90px;
+  margin-top: 90px;
 	opacity: 80%; }
 
 .pieDePagina{
@@ -111,8 +136,9 @@ body {
 	border-color: none;
 	border-radius: 10px;
 	padding: 12px;
-	transition: all 1s;
+	transition: all 0.5s;
 }
+
 .botonLinkItem:hover{
 	background-color: #2C394B;
 }
@@ -165,14 +191,6 @@ header nav .menuNavegacion {
 
 /*Sección Portada de Inicio*/
 
-.portada {
-  width: 100%;
-  max-width: 100vw; }
-  
-.banner {
-  width: 100%;
-  height: auto; }
-
 .gradiente{
 	width: 100%;
 	height: 760px;
@@ -182,11 +200,45 @@ header nav .menuNavegacion {
 	z-index: 2;
 	opacity: 1; }
 
-.videoPortada{
-	height: 100vh;
-	margin-bottom: 0px;
+.gradiente2{
+	width: 100%;
+	height: 528px;
+	background: rgb(255,76,41);
+	background: linear-gradient(90deg, rgba(255,76,41,0.7875525210084033) 50%, rgba(252,176,69,0.8099614845938375) 100%);
+	position: absolute;
+	z-index: 2;
+	opacity: 1;
 	animation: fadeIn;
-	animation-duration: 6s; }
+	animation-duration: 2s;
+}
+
+.imagenPortada{
+	width: 100%;
+	margin-bottom: 80px;
+	animation: fadeIn;
+	animation-duration: 6s;
+}
+
+
+.videoImagenPortada{
+	height: 100vh;
+	margin-bottom: 50px;
+	animation: fadeIn;
+	animation-duration: 6s;
+}
+
+@media (min-aspect-ratio: 16/9) {
+	.videoImagenPortada{
+		width: 100%;
+		height: auto;
+	}
+}
+@media (max-aspect-ratio: 16/9) {
+	.videoImagenPortada{
+		width: auto;
+		height: 100%;
+	}
+}
 
 .sobreImagenPortada{
 	position: absolute;
@@ -209,8 +261,6 @@ header nav .menuNavegacion {
 .iconoWhatsApp:hover {
 	width: 5%; }
 
-
-
 .iconoNosotros{
 	margin-top: 50px;
 	display: flex;
@@ -225,6 +275,14 @@ header nav .menuNavegacion {
 	margin-left:  auto;
 	width: 100px; }
 
+.iconoClientes{
+	margin-top: 50px;
+	display: flex;
+	margin-right: auto;
+	margin-left:  auto;
+	width: 100px;
+}
+
 p {
   color: #FFF;
   text-align: center; }
@@ -235,6 +293,10 @@ p {
   margin-left: 100px;
   margin-right: 100px;
   justify-content: center; }
+
+.logoClientes{
+	margin-left: 100px;
+	margin-right: 100px; }
 
 .logoEmpresas {
   width: 200px;
@@ -376,6 +438,13 @@ p {
   border-color: none;
   border-radius: 10px;
   padding: 12px; }
+
+.serviciosDetalles{
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-bottom: 20px;
+	list-style-type: none;
+}
 
 /*Pie*/
 footer {
