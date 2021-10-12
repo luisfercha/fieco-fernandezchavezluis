@@ -13,6 +13,7 @@ body{
 
 .container {
     width: $ancho-banner;
+    @include max-width;
 }
 
 .banner {

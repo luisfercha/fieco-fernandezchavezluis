@@ -1,27 +1,229 @@
-@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+body {
+  background-color: #E5E5E5;
+  font-family: 'Open Sans', sans-serif; } 
+
+/*Estilos varios*/
+
+.titulo {
+  color: #082032;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px; }
+
+.texto {
+  color: #2C394B;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.boton {
+  font-size: 20px;
+  text-decoration: none;
+  color: #FFF;
+  background-color: #FF4C29;
+  border-color: none;
+  border-radius: 10px;
+  padding: 12px;
+  transition: all 1s; }
+
+.textoLink {
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  transition: all 1s; }
+
+.linea{
+	border-top: 1px solid grey;
+	margin-bottom: 90px;
+	opacity: 80%; }
+
+.pieDePagina{
+	background-color: #082032;
+	padding: 30px;
+}
+.logoPieDePagina{
+	display: flex;
+	flex-direction: row;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+}
+.texto3{
+	color: #ffffffff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	text-align: center;
+}
+.textoFirma{
+	margin-top: 20px;
+	color: #ffffffff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	text-align: center;
+	font-style: italic;
+}
+
+.frases{
+	margin-bottom: 80px;
+	opacity: 80%;
+}
+.textoFrases{
+	color: #2C394B;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 35px;
+	font-style: italic;
+	text-align: center;
+	margin-bottom: 10px;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+.textoFrases2{
+	color: #2C394B;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-style: italic;
+	text-align: center;
+}
+
+.textoLink{
+	text-align: center;
+	margin-bottom:  100px;
+	margin-top: 50px;
+}
+
+.botonLinkItem{
+	font-size: 20px;
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #FF4C29;
+	border-color: none;
+	border-radius: 10px;
+	padding: 12px;
+	transition: all 1s;
+}
+.botonLinkItem:hover{
+	background-color: #2C394B;
+}
+
+/*Encabezado*/
 header {
   background-color: #082032;
   margin: 0px; }
 
-header nav .flexMenu {
+.encabezado {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  list-style: none;
-  justify-content: space-evenly;
-  padding: 40px;
-  font-size: 1.2rem;
-  margin: 0px; }
+	justify-content: space-between;
+	align-items: center;
+	height: 75px;
+	width: 100%;
+	animation: fadeInDown;
+	animation-duration: 1s; }
 
-.flexMenu li a {
+header nav .menuNavegacion {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-right: 30px;
+	text-transform: uppercase; }
+
+.logoEncabezado{
+  margin-left: 30px;
+  width: 200px;
+  height: 30px; }
+
+.menuNavegacionItem{
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  transition: all 0.5s; }
+
+.menuNavegacionItem:hover{
+  transform: scale(1.1); }
+
+.menuNavegacionLink{
+  color: white;
   text-decoration: none;
-  color: #FFF; }
+  transition: all 0.5s; }
 
-footer {
-  background-color: #082032;
-  margin: 0px;
-  padding: 10px; }
+.menuNavegacionLink:hover{
+  background: #FF4C29;
+  opacity: 100%;
+  padding: 5px;
+  border-radius: 10px; }
+
+/*Sección Portada de Inicio*/
+
+.portada {
+  width: 100%;
+  max-width: 100vw; }
+  
+.banner {
+  width: 100%;
+  height: auto; }
+
+.gradiente{
+	width: 100%;
+	height: 760px;
+	background: rgb(255,76,41);
+	background: linear-gradient(90deg, rgba(255,76,41,0.7875525210084033) 50%, rgba(252,176,69,0.8099614845938375) 100%);
+	position: absolute;
+	z-index: 2;
+	opacity: 1; }
+
+.videoPortada{
+	height: 100vh;
+	margin-bottom: 0px;
+	animation: fadeIn;
+	animation-duration: 6s; }
+
+.sobreImagenPortada{
+	position: absolute;
+	z-index: 3;
+	right: 30px;
+	bottom: -50px;
+	animation: fadeInRight;
+	animation-duration: 1s; }
+
+.iconoWhatsApp{
+  position: fixed;
+  z-index: 4;
+  bottom: 40px;
+  right: 30px;
+  width: 4%;
+  animation: fadeInUp;
+	animation-duration: 1s;
+	transition: width 0.5s; }
+  
+.iconoWhatsApp:hover {
+	width: 5%; }
+
+
+
+.iconoNosotros{
+	margin-top: 50px;
+	display: flex;
+	margin-right: auto;
+	margin-left:  auto;
+	width: 150px; }
+
+.iconoServicios{
+	margin-top: 30px;
+  display: flex;
+  margin-right: auto;
+	margin-left:  auto;
+	width: 100px; }
 
 p {
   color: #FFF;
@@ -36,7 +238,11 @@ p {
 
 .logoEmpresas {
   width: 200px;
-  margin: 10px; }
+  margin: 10px;
+  transition: all 0.5s; }
+
+.logoEmpresas:hover{
+	transform: scale(1.1); }
 
 .contacto {
   display: flex;
@@ -87,123 +293,25 @@ p {
   width: 318px;
   height: 30px; }
 
-* {
-  margin: 0;
-  padding: 0; }
+.grupoIntegrantes{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly; }
+.cardIntegrante{
+	list-style-type: none; }
 
-body {
-  background-color: #E5E5E5;
-  font-family: 'Open Sans', sans-serif; }
+.imagenAvatar{
+	display: flex;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 15px;
+	width: 200px;
+	border-radius: 50%;
+  transition: all 0.5s; }
 
-.container {
-  width: 100%;
-  max-width: 100vw; }
-
-.banner {
-  width: 100%;
-  height: auto; }
-
-.titulo {
-  color: #082032;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  font-size: 50px;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 10px; }
-
-.texto {
-  color: #2C394B;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
-  text-align: center;
-  margin-bottom: 50px;
-  padding-left: 30px;
-  padding-right: 30px; }
-
-.boton {
-  font-size: 20px;
-  text-decoration: none;
-  color: #FFF;
-  background-color: #FF4C29;
-  border-color: none;
-  border-radius: 10px;
-  padding: 12px;
-  transition: all 1s; }
-
-.textoLink {
-  text-align: center;
-  margin-bottom: 100px;
-  margin-top: 50px;
-  transition: all 1s; }
-
-/*En esta sección, se crean 4 bloques con el Método de BEM*/
-.cards {
-  display: inline-flex;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 30px; }
-
-.cards__integrante {
-  display: grid;
-  grid-template-columns: 200px;
-  grid-template-rows: 2fr, 1fr, 0.5fr;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  background-color: #FF4C29;
-  justify-content: center;
-  align-content: center;
-  justify-items: center; }
-
-.card__imagen {
-  border-radius: 50%;
-  width: 150px;
-  padding: 10px; }
-
-.card__texto {
-  color: #FFF;
-  padding: 10px;
-  font-weight: 700;
-  font-size: 30px; }
-
-.card__texto--chico {
-  color: #FFF;
-  padding: 10px;
-  font-size: 20px; }
-
-/*En esta sección, se crean 4 bloques con el Método de BEM*/
-.cards {
-  display: inline-flex;
-  flex-wrap: wrap;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 30px; }
-
-.cards__servicio {
-  display: grid;
-  grid-template-columns: 300px;
-  grid-template-rows: 2fr, 1fr, 0.5fr;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  background-color: #bebebebe;
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  margin: 10px; }
-
-.card__texto {
-  color: #082032;
-  padding: 10px;
-  font-weight: 700;
-  font-size: 30px;
-  margin-top: 10px; }
-
-.card__texto--chico {
-  color: #082032;
-  padding: 10px;
-  font-size: 20px;
-  font-weight: 200;
-  margin-bottom: 20px; }
+.imagenAvatar:hover{
+	transform: scale(1.1); }
 
 .empresas {
   display: flex;
@@ -268,3 +376,9 @@ body {
   border-color: none;
   border-radius: 10px;
   padding: 12px; }
+
+/*Pie*/
+footer {
+  background-color: #082032;
+  margin: 0px;
+  padding: 10px; }

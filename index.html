@@ -3,42 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="fieco, asesoramiento, financiero, economico, empresario, organizacion, auditoria, administracion, gestion, impuestos, balance,">
-    <meta name="description" content="Somos un equipo de profesionales que le da a nuestros clientes distintas herramientas que les favorecen en el desarrollo organizacional, mejorando los aspectos comerciales y financieros de la empresa, capacitando al personal involucrado" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/stilo.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>FIECO</title>
 </head>
 <body>
     <!--Acá empieza Header-->	
     <header>
-        <nav>
-            <ul class="flexMenu">
-                <li><a href="index.html" class="menuNavegacionLink">Inicio</a></li>
-                <li><a href="nosotros.html" class="menuNavegacionLink">Nosotros</a></li>
-                <li><a href="servicios.html" class="menuNavegacionLink">Servicios</a></li>
-                <li><a href="clientes.html" class="menuNavegacionLink">Clientes</a></li>
-                <li><a href="contacto.html" class="menuNavegacionLink">Contacto</a></li>
+        <nav class="encabezado">
+            <img class="logoEncabezado" src="media/LOGO FIECO 1.png" alt="portada de la website">
+            <ul class="menuNavegacion">
+                <li class="menuNavegacionItem"><a href="index.html" class="menuNavegacionLink">Inicio</a></li>
+                <li class="menuNavegacionItem"><a href="nosotros.html" class="menuNavegacionLink">Nosotros</a></li>
+                <li class="menuNavegacionItem"><a href="servicios.html" class="menuNavegacionLink">Servicios</a></li>
+                <li class="menuNavegacionItem"><a href="clientes.html" class="menuNavegacionLink">Clientes</a></li>
+                <li class="menuNavegacionItem"><a href="contacto.html" class="menuNavegacionLink">Contacto</a></li>
             </ul>
         </nav>
 	</header>
 	<!--Acá empieza Seccion Inicio-->
-    <div class="container">
-        <img class="banner" src="media/portadaweb.jpg" alt="">
+    <div class="portada">
+        <div class="gradiente"></div>
+        <img class="iconoWhatsApp" src="media/whatsapp.png" alt="">
+        <img class="sobreImagenPortada" src="media/LOGO FIECO 3.png" alt="">
+        <video class="banner" class="videoPortada" src="media/genteDeOficina.mp4" autoplay muted loop alt="portadaDeInicio"></video>
     </div>
     <!--Acá empieza Seccion Nosotros-->
     <section class="nosotros">
+        <img class="iconoNosotros" src="media/icono-nosotros.png" alt="">
         <p class="titulo">Nosotros</p>
         <p class="texto">Somos un equipo de profesionales que le da a nuestros clientes distintas herramientas que les favorecen en el desarrollo organizacional, mejorando los aspectos comerciales y financieros de la empresa, capacitando al personal involucrado.</p>
         <p class="textoLink"><a href="nosotros.html" class="boton">Más sobre nosotros</a></p>
     </section>
+    <div class= "linea"></div>
     <!--Acá empieza Seccion Servicios-->
     <section class="servicios">
+        <img class="iconoServicios" src="media/icono-servicios.png" alt="">
         <p class="titulo">Servicios</p>
         <p class="texto">Evaluamos las finanzas de tu empresa y te señalamos estrategias para hacerlas más organizadas. Realizamos auditorias operativas, procedimientos internos y toma de decisiones. Hacemos gestiones contables, liquidaciones de sueldos e impuestos y presentación de balances.</p>
         <p class="textoLink"><a href="servicios.html" class="boton">Todos nuestros servicios</a></p>
     </section>
+    <div class= "linea"></div>
     <!--Acá empieza Seccion Clientes-->
     <section class="servicios">
         <p class="titulo">Clientes</p>
@@ -95,6 +103,5 @@
             <p>FIECO - Asesoramiento Financiero y Económico - Año 2021</p>
             <p>Desarrollado por Luis Fernández</p>
     </footer>	
-	<!--Acá empieza Pie de Página-->
 </body>
 </html>

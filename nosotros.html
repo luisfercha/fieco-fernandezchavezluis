@@ -2,67 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="keywords" content="fieco, asesoramiento, financiero, economico, auditoria, consultas, gestion, contabilidad, administracion, proyecto, coaching, petrolera, minera, negocio, corporativo, desarrollo, constructora, gastronomia, emprendimiento, contacto, inmediato, consulta, atencion, telefono, email, comunicacion">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/stilo.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <title>Desafio SASS</title>
+    <title>Nosotros</title>
 </head>
 <body>
     <!--Acá empieza Header-->	
     <header>
-        <nav>
-            <ul class="flexMenu">
-                <li><a href="index.html" class="menuNavegacionLink">Inicio</a></li>
-                <li><a href="nosotros.html" class="menuNavegacionLink">Nosotros</a></li>
-                <li><a href="servicios.html" class="menuNavegacionLink">Servicios</a></li>
-                <li><a href="clientes.html" class="menuNavegacionLink">Clientes</a></li>
-                <li><a href="contacto.html" class="menuNavegacionLink">Contacto</a></li>
+        <nav class="encabezado">
+            <img class="logoEncabezado" src="media/LOGO FIECO 1.png" alt="portada de la website">
+            <ul class="menuNavegacion">
+                <li class="menuNavegacionItem"><a href="index.html" class="menuNavegacionLink">Inicio</a></li>
+                <li class="menuNavegacionItem"><a href="nosotros.html" class="menuNavegacionLink">Nosotros</a></li>
+                <li class="menuNavegacionItem"><a href="servicios.html" class="menuNavegacionLink">Servicios</a></li>
+                <li class="menuNavegacionItem"><a href="clientes.html" class="menuNavegacionLink">Clientes</a></li>
+                <li class="menuNavegacionItem"><a href="contacto.html" class="menuNavegacionLink">Contacto</a></li>
             </ul>
         </nav>
 	</header>
 
-    <div class="container">
-		<img class="banner" src="media/imagen-portada-nosotros1.jpg" alt="">
+    <img class="iconoWhatsApp" src="media/whatsapp.png" alt="">
+	<div class="gradiente2"></div>
+	<div>
+		<img class="imagenPortada" src="media/imagen-portada-nosotros1.jpg" alt="">
+		<div class="titulo3">NOSOTROS</div>
 	</div>
 	<div>
-        <div class="titulo">NOSOTROS</div>
-	    <p class="texto">Somos un equipo de profesionales que le da a nuestros clientes distintas herramientas que les favorecen en el desarrollo organizacional, mejorando los aspectos comerciales y financieros de la empresa, capacitando al personal involucrado.</p>
+		<p class="texto">Somos un equipo de profesionales que le da a nuestros clientes distintas herramientas que les favorecen en el desarrollo organizacional, mejorando los aspectos comerciales y financieros de la empresa, capacitando al personal involucrado.</p>
 	</div>
-    <!--En esta sección, se crean 4 bloques con el Método de BEM-->	
-    <div class="cards">
-        <div class="cards__integrante">
-            <img class="card__imagen" src="media/1.jfif" alt="">
-            <div><p class="card__texto">Federico Giacommo</p></div>
-            <div><p class="card__texto card__texto--chico">Abogado</p></div>
-        </div>
+	<div class="grupoIntegrantes">
+		<ul class="cardIntegrante">
+			<li><img class="imagenAvatar" src="media/2.jfif" alt=""></li>
+			<li class="titulo2">Lic. Macarena García </li>
+			<li class="texto">Contadora Pública</li>
+		</ul>
+		<ul class="cardIntegrante">
+			<li><img class="imagenAvatar" src="media/4.jfif" alt=""></li>
+			<li class="titulo2">Lic. Gastón Arteche </li>
+			<li class="texto">Administrador de Empresas</li>
+		</ul>
+		<ul class="cardIntegrante">
+			<li><img class="imagenAvatar" src="media/1.jfif" alt=""></li>
+			<li class="titulo2">Lic. Federico Giacommo</li>
+			<li class="texto">Abogado</li>
+		</ul>
+		<ul class="cardIntegrante">
+			<li><img class="imagenAvatar" src="media/3.jfif" alt=""></li>
+			<li class="titulo2">Lic. Malena Grinz</li>
+			<li class="texto">Actuario</li>
+		</ul>
+		<ul class="cardIntegrante">
+			<li><img class="imagenAvatar" src="media/5.jfif" alt=""></li>
+			<li class="titulo2">Lic. Florencia Pozzi</li>
+			<li class="texto">Recursos Humanos</li>
+		</ul>
+	</div>
+    <br>
+    <div>
+        <p class="textoLink"><a class="botonLinkItem" href="servicios.html">Conocé todos los servicios que brindamos</a></p>
     </div>
-    <div class="cards">
-        <div class="cards__integrante">
-            <img class="card__imagen" src="media/2.jfif" alt="">
-            <div><p class="card__texto">Macarena García</p></div>
-            <div><p class="card__texto card__texto--chico">Contadora</p></div>
-        </div>
-    </div>
-    <div class="cards">
-        <div class="cards__integrante">
-            <img class="card__imagen" src="media/3.jfif" alt="">
-            <div><p class="card__texto">Malena Grinz</p></div>
-            <div><p class="card__texto card__texto--chico">Actuario</p></div>
-        </div>
-    </div>
-    <div class="cards">
-        <div class="cards__integrante">
-            <img class="card__imagen" src="media/4.jfif" alt="">
-            <div><p class="card__texto">Gastón Arteche</p></div>
-            <div><p class="card__texto card__texto--chico">Administrador</p></div>
-        </div>
+    <div class="frases">
+        <p class="textoFrases">"Ninguno de nosotros es tan bueno solo como todos nostros juntos con un equipo increible de personas"</p>
+        <p class="textoFrases2">Lisa Luttof-Perlo</p>
     </div>
     <!--Acá empieza Pie de Página-->
     <footer>
-        <p>FIECO - Asesoramiento Financiero y Económico - Año 2021</p>
-        <p>Desarrollado por Luis Fernández</p>
+        <img  class="logoPieDePagina" src="media/LOGO FIECO 1.png" alt="">
+		<p class="texto3">FIECO - Asesoramiento Financiero y Económico - Año 2021</p>
+		<p class="textoFirma">Desarrollado por Luis Fernández</p>
     </footer>	
 	<!--Acá empieza Pie de Página-->
 </body>
