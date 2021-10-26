@@ -2,78 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="fieco, asesoramiento, financiero, economico, auditoria, consultas, gestion, contabilidad, administracion, proyecto, coaching, petrolera, minera, negocio, corporativo, desarrollo, constructora, gastronomia, emprendimiento, contacto, inmediato, consulta, atencion, telefono, email, comunicacion">
+    <meta name="description" content="Somos un equipo de profesionales que le da a nuestros clientes distintas herramientas que les favorecen en el desarrollo organizacional, mejorando los aspectos comerciales y financieros de la empresa, capacitando al personal involucrado">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="keywords" content="fieco, asesoramiento, financiero, economico, auditoria, consultas, gestion, contabilidad, administracion, proyecto, coaching, petrolera, minera, negocio, corporativo, desarrollo, constructora, gastronomia, emprendimiento, contacto, inmediato, consulta, atencion, telefono, email, comunicacion">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="css/stilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Contacto</title>
 </head>
 <body>
-    <!--Acá empieza Header-->	
+    <!--Encabezado con navegador-->
     <header>
-        <nav class="encabezado">
-            <img class="logoEncabezado" src="media/LOGO FIECO 1.png" alt="portada de la website">
-            <ul class="menuNavegacion">
-                <li class="menuNavegacionItem"><a href="index.html" class="menuNavegacionLink">Inicio</a></li>
-                <li class="menuNavegacionItem"><a href="nosotros.html" class="menuNavegacionLink">Nosotros</a></li>
-                <li class="menuNavegacionItem"><a href="servicios.html" class="menuNavegacionLink">Servicios</a></li>
-                <li class="menuNavegacionItem"><a href="clientes.html" class="menuNavegacionLink">Clientes</a></li>
-                <li class="menuNavegacionItem"><a href="contacto.html" class="menuNavegacionLink">Contacto</a></li>
-            </ul>
-        </nav>
-	</header>
-    <img class="iconoWhatsApp" src="media/whatsapp.png" alt="">
-	<div class="gradiente2"></div>
-	<div>
-		<img class="imagenPortada" src="media/imagen-portada-contacto1.jpg" alt="">
-		<p class="titulo3">contacto</p>
-	</div>
-	<div>
-		<p class="texto">Comunicate con nosotros completando el siguiente formulario y te contactaremos a la brevedad</p>
-	</div>
-	<div>
-		<form class="contactoLista" class="form" action="">
-			<div>
-				<input class= "contactoCampos" type="text" name="Nombre y Apellido" value="" placeholder="Nombre y Apellido">
-				<input class= "contactoCampos" type="text" name="Empresa" value="" placeholder="Empresa">
-			</div>
-			<div>
-				<input class= "contactoCampos" type="text" name="E-mail" value="" placeholder="E-mail">	
-				<input class= "contactoCampos" type="text" name="Teléfono/Celular" value="" placeholder="Teléfono/Celular">
-			</div>
-			<div>
-				<input class= "contactoCampos" type="text" name="Ciudad" value="" placeholder="Ciudad">
-				<input class= "contactoCampos" type="text" name="País" value="" placeholder="País">
-			</div>
-			<div>
-				<input class="contactoMensaje" name="" placeholder="Mensaje" id=""></input>
-			</div>
-			<div class="formSelectCheckbox">
-				<p class="texto">Cantidad de personal <select name="cantidad de personal" id=""></p>
-				<option value="micro">De 1 a 5</option>
-				<option value="pequeña">De 6 a 50</option>
-				<option value="mediana">De 51 a 200</option>
-				<option value="grande">Más de 200</option>
-				</select>
-				<p class="texto">Deseo recibir noticias de FIECO a mi e-mail <input type="checkbox" name="acepta" value="1"></p>
-			</div>
-			<div class="contactoBotones">
-				<input class="contactoBotonEnviar" type="submit" value="Enviar"/>
-				<input class="contactoBotonLimpiar" type="reset" value="Limpiar"/>
-			</div>
-		</form>
-	</div>
-	<div class="frases">
-		<p class="textoFrases">"El crear un red de contactos es una parte esencial de la construcción de riqueza."</p>
-		<p class="textoFrases2">Armstrong Williams</p>
-	</div>
-	<!--Acá empieza Pie de Página-->
-	<div class="pieDePagina">
-		<img  class="logoPieDePagina" src="media/LOGO FIECO 1.png" alt="">
-		<p class="texto3">FIECO - Asesoramiento Financiero y Económico - Año 2021</p>
-		<p class="textoFirma">Desarrollado por Luis Fernández</p>
-	</div>
-	<!--Acá termina Pie de Página-->
+        <div class="contenedor">
+            <h1>FIECO</h1>
+            <input type="checkbox" id="menuBar">
+            <label class= "iconMenu" for="menuBar"><img src="media/menu.svg" alt=""></label>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="clientes.html">Clientes</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+        <img class="whatsapp" src="media/whatsapp.png" alt="">      
+    </header>
+    <!--Acá empieza Banner-->
+    <section id="bannerContacto">
+        <div class="contenedor">
+            <h1>Contacto</h1>
+        </div>
+    </section>
+    <!--Acá termina Banner-->
+    <section id="contacto2">
+        <div class="contenedor">
+            <p>Comunicate con nosotros completando el siguiente formulario y te contactaremos a la brevedad</p>
+            <form action="">
+                <input type="text" name="Nombre y Apellido" value="" placeholder="Nombre y Apellido">
+                <input type="text" name="Empresa" value="" placeholder="Empresa">
+                <input type="text" name="E-mail" value="" placeholder="E-mail">	
+                <input type="text" name="Teléfono/Celular" value="" placeholder="Teléfono/Celular">
+                <input type="text" name="Ciudad" value="" placeholder="Ciudad">
+                <input type="text" name="País" value="" placeholder="País">
+                <input class="inputMensaje" name="" placeholder="Mensaje" id=""></input>
+                <div class="selecciones">
+                    <p>Cantidad de personal</p>
+                    <select name="cantidad de personal" id="">
+                        <option value="micro">De 1 a 5</option>
+                        <option value="pequeña">De 6 a 50</option>
+                        <option value="mediana">De 51 a 200</option>
+                        <option value="grande">Más de 200</option>
+                    </select>
+                    <div class="selecciones2">
+                        <p>Recibir por e-mail noticias de FIECO</p>
+                        <input type="checkbox" name="acepta" value="1">
+                    </div>
+                    <input class="botonEnviar" type="submit" value="Enviar"/>
+                </div>
+            </form>
+            <div class="frases">
+                <p class="textoFrases">"El crear una red de contactos es una parte esencial de la construcción de riqueza."</p>
+                <p class="textoFrases2">Armstrong Williams</p>
+            </div>
+        </div>
+    </section>
+    <!--Pie de página-->
+    <footer>
+        <div class="contenedor">
+            <p>Diseño y Desarrollo por<a href="https://luisffernandez.wixsite.com/portfolio"> Luis Fernández ©</a></p>
+        </div>
+    </footer>
 </body>
 </html>
