@@ -1,0 +1,32 @@
+$ancho-pie-de-pagina: 100%;
+$alto-pie-de-pagina: 60px;
+$color-pie-de-pagina: #082032;
+$color-texto-pie-de-pagina: #ffffff;
+
+
+footer {
+	width: $ancho-pie-de-pagina;
+	height: $alto-pie-de-pagina;
+	background: $color-pie-de-pagina;
+	color: $color-texto-pie-de-pagina;
+	p {
+		text-align: center;
+		padding: 20px;
+		font-size: 12px;
+		font-size: 14px;
+		padding: 10px;
+		font-size: 20px;
+		text-align: center;
+		padding: 10px;
+		font-size: 18px;
+		text-align: center;
+		padding: 10px;
+		font-size: 18px;
+		text-align: center;
+		padding: 10px;
+	}
+	a {
+		text-decoration: none;
+		color: #FF4C29;
+	}
+}

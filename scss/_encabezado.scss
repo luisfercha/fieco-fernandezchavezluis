@@ -1,0 +1,48 @@
+$ancho-encabezado:100%;
+$altura-encabezado:50px;
+$color-encabezado:#082032;
+$color-letra-encabezado:#ffffff;
+$fuente-encabezado:28px;
+$ancho-icono-menu:60px;
+
+
+header {
+	width: $ancho-encabezado;
+	height: $altura-encabezado;
+	background: $color-encabezado;
+	color: $color-letra-encabezado;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	animation: fadeInDown;
+	animation-duration: 1s;
+	label {
+		float: right;
+		font-size: fuente-encabezado;
+		margin: 6px 0;
+		cursor: pointer;
+		display: none;
+		display: none;
+	}
+	.contenedor {
+		display: table;
+	}
+	div {
+		h1 {
+			font-size: 30px;
+			margin-top: 8px;
+			font-size: 45px;
+			margin-top: 5px;
+			font-size: 40px;
+			margin-top: 5px;
+			font-size: 40px;
+			margin-top: 5px;
+		}
+		label {
+			img {
+				width: $ancho-icono-menu;
+			}
+		}
+	}
+}

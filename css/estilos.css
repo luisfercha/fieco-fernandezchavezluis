@@ -1504,7 +1504,7 @@ footer a{
         position: absolute;
         z-index: 200;
         width: 4rem;
-        transform: translateX(1950%) translateY(700%);
+        right: 380px
     }
 
     .menu a{
