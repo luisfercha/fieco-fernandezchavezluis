@@ -4,6 +4,9 @@ $color-fondo-body: #E5E5E5;
 $color-fondo-encabezado: #082032;
 $ancho-encabezado: 100%;
 $alto-encabezado: 50px;
+$color-piedepagina: #082032;
+$ancho-piedepagina: 100%;
+$alto-piedepagina: 60px;
 
 * {
   margin: 0px;
@@ -101,9 +104,9 @@ header {
 /*Pie de Página*/
 
 footer {
-    width: 100%;
-    height: 60px;
-    background: #082032;
+    width: $ancho-piedepagina;
+    height: $alto-piedepagina;
+    background: $color-piedepagina;
     color: #ffffff;
   
     p {
