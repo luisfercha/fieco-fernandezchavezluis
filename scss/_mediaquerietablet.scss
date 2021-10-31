@@ -1,0 +1,418 @@
+/*Tamaño media quierie para Ipad*/
+
+@media (min-width: 768px) {
+    header {
+      height: 70px;
+  
+      div {
+        h1 {
+          font-size: 45px;
+          margin-top: 5px;
+        }
+  
+        label img {
+          width: 60px;
+        }
+      }
+    }
+  
+    .whatsapp {
+      position: absolute;
+      z-index: 200;
+      width: 7rem;
+      transform: translateX(550%) translateY(670%);
+    }
+  
+    .menu {
+      top: 70px;
+  
+      a {
+        height: 70px;
+        font-size: 30px;
+        padding: 20px;
+  
+        &:hover {
+          background: #FF4C29;
+        }
+      }
+    }
+  
+    #banner {
+      margin-top: 70px;
+      margin-bottom: 30px;
+      position: relative;
+      height: 100vh;
+      background-image: url('../media/portada.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  
+      &:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(255, 76, 41);
+        background: linear-gradient(90deg, rgba(255, 76, 41, 0.787552521) 50%, rgba(252, 176, 69, 0.8099614846) 100%);
+      }
+  
+      h1 {
+        font-size: 180px;
+      }
+  
+      p {
+        font-size: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
+  
+    #nosotros {
+      h1 {
+        font-size: 40px;
+      }
+  
+      p {
+        font-size: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+  
+      img {
+        width: 18rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 20px;
+      }
+    }
+  
+    #servicios {
+      h1 {
+        font-size: 40px;
+      }
+  
+      h3 {
+        font-size: 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+  
+      p {
+        font-size: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+  
+      img {
+        width: 8rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 20px;
+      }
+    }
+  
+    #clientes {
+      h1 {
+        font-size: 40px;
+      }
+  
+      p {
+        font-size: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+  
+      img {
+        width: 10rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 20px;
+      }
+    }
+  
+    #contacto {
+      h1 {
+        font-size: 40px;
+      }
+  
+      input {
+        font-size: 20px;
+        height: 50px;
+        margin-bottom: 20px;
+      }
+    }
+  
+    .selecciones {
+      p {
+        font-size: 20px;
+      }
+  
+      select {
+        height: 50px;
+        font-size: 20px;
+      }
+    }
+  
+    .selecciones2 {
+      display: grid;
+      grid-template-columns: 1fr 0.3fr;
+      grid-template-rows: 1fr;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  
+      input {
+        padding: 20px;
+      }
+    }
+  
+    footer p {
+      font-size: 20px;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .logoClientes {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-bottom: 40px;
+      margin-left: 40px;
+      margin-right: 40px;
+      justify-content: space-evenly;
+  
+      img {
+        width: 100%;
+        margin: 20px;
+      }
+    }
+  
+    .botonEnviar {
+      height: 70px;
+    }
+  
+    /*Pagina nosotros.html*/
+  
+    #bannerNosotros {
+      margin-top: 60px;
+      margin-bottom: 30px;
+      position: relative;
+      height: 100vh;
+      background-image: url('../media/portadaNosotros.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  
+      &:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(255, 76, 41);
+        background: linear-gradient(90deg, rgba(255, 76, 41, 0.787552521) 50%, rgba(252, 176, 69, 0.8099614846) 100%);
+      }
+  
+      h1 {
+        font-size: 75px;
+      }
+    }
+  
+    .grupoIntegrantes {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      text-align: center;
+      margin-bottom: 50px;
+  
+      div {
+        width: 50%;
+  
+        h2 {
+          color: #082032;
+        }
+      }
+    }
+  
+    .imagenAvatar {
+      margin-bottom: 15px;
+      width: 100%;
+      border-radius: 50%;
+      transition: all 0.5s;
+  
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  
+    /*Pagina servicios.html*/
+  
+    #bannerServicios {
+      margin-top: 60px;
+      margin-bottom: 30px;
+      position: relative;
+      height: 100vh;
+      background-image: url('../media/portadaServicios.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  
+      &:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(255, 76, 41);
+        background: linear-gradient(90deg, rgba(255, 76, 41, 0.787552521) 50%, rgba(252, 176, 69, 0.8099614846) 100%);
+      }
+  
+      h1 {
+        font-size: 75px;
+      }
+    }
+  
+    .grupoServicios {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 20px;
+      justify-content: space-evenly;
+      margin-bottom: 50px;
+    }
+  
+    .cardServicios {
+      width: 47%;
+      background-color: #FFF;
+      opacity: 80%;
+      border-radius: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    #servicios .contenedor .cardServicios h1 {
+      font-size: 30px;
+      margin: 20px;
+    }
+  
+    /*Pagina clientes.html*/
+  
+    #bannerClientes {
+      margin-top: 60px;
+      margin-bottom: 30px;
+      position: relative;
+      height: 100vh;
+      background-image: url('../media/portadaClientes.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  
+      &:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(255, 76, 41);
+        background: linear-gradient(90deg, rgba(255, 76, 41, 0.787552521) 50%, rgba(252, 176, 69, 0.8099614846) 100%);
+      }
+  
+      h1 {
+        font-size: 75px;
+      }
+    }
+  
+    #clientes .contenedor .grupoClientes {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  
+      img {
+        width: 40%;
+        margin: 10px;
+      }
+    }
+  
+    /*Pagina contacto.html*/
+  
+    #bannerContacto {
+      margin-top: 60px;
+      margin-bottom: 30px;
+      position: relative;
+      height: 100vh;
+      background-image: url('../media/portadaContacto.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  
+      &:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(255, 76, 41);
+        background: linear-gradient(90deg, rgba(255, 76, 41, 0.787552521) 50%, rgba(252, 176, 69, 0.8099614846) 100%);
+      }
+  
+      h1 {
+        font-size: 75px;
+      }
+    }
+  
+    #contacto2 {
+      input {
+        font-size: 20px;
+        height: 50px;
+        margin-bottom: 20px;
+      }
+  
+      .selecciones {
+        p {
+          font-size: 20px;
+        }
+  
+        select {
+          height: 50px;
+          font-size: 20px;
+        }
+      }
+  
+      .selecciones2 {
+        display: grid;
+        grid-template-columns: 1fr 0.3fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+  
+        input {
+          padding: 20px;
+        }
+      }
+  
+      div form .inputMensaje {
+        height: 250px;
+      }
+  
+      p {
+        font-size: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+    }
+  }
+  

@@ -1,0 +1,99 @@
+/*Estilos de Página nosotros.html*/
+
+#bannerNosotros {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    position: relative;
+    height: 100vh;
+    background-image: url('../media/portadaNosotros.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: fadeIn;
+    animation-duration: 1s;
+  
+    &:before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgb(255, 76, 41);
+      background: linear-gradient(90deg, rgba(255, 76, 41, 0.787552521) 50%, rgba(252, 176, 69, 0.8099614846) 100%);
+    }
+  
+    .contenedor {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      color: #FFF;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    h1 {
+      font-size: 60px;
+      text-align: center;
+      letter-spacing: -3px;
+      animation: fadeInUp;
+      animation-duration: 3s;
+      margin-bottom: 100px;
+    }
+  }
+  
+  .grupoIntegrantes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-bottom: 50px;
+  
+    div {
+      width: 100%;
+  
+      h2 {
+        color: #082032;
+      }
+    }
+  }
+  
+  .imagenAvatar {
+    margin-bottom: 15px;
+    width: 100%;
+    border-radius: 50%;
+    transition: all 0.5s;
+  
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  
+  .frases {
+    margin-bottom: 80px;
+    opacity: 80%;
+  }
+  
+  #nosotros .contenedor .frases {
+    .textoFrases {
+      color: #2C394B;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 25px;
+      font-style: italic;
+      text-align: center;
+      margin-top: 20px;
+      padding-left: auto;
+      padding-right: auto;
+    }
+  
+    .textoFrases2 {
+      color: #2C394B;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 20px;
+      font-style: italic;
+      text-align: center;
+    }
+  }
+  
